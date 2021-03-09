@@ -1,9 +1,20 @@
-function Home() {
-    const Tests123 = '1234';
+import React from 'react';
+import usePosts from './../../api/HomeApi';
+
+function Home(): JSX.Element {
+    const { data, isFetching } = usePosts();
 
     return (
         <div>
-            <div>test2 </div>
+            {!isFetching &&
+                data &&
+                Object.keys(data).map((temp) => (
+                    <p key={temp}>
+                        <a href="#">
+                            {temp}:{data[temp].title}
+                        </a>
+                    </p>
+                ))}
         </div>
     );
 }
