@@ -14,7 +14,7 @@ Use a better box model (opinionated).
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /**
@@ -22,8 +22,8 @@ Use a more readable tab size (opinionated).
 */
 
 :root {
-  -moz-tab-size: 4;
-  tab-size: 4;
+    -moz-tab-size: 4;
+    tab-size: 4;
 }
 
 /**
@@ -32,8 +32,8 @@ Use a more readable tab size (opinionated).
 */
 
 html {
-  line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /*
@@ -46,7 +46,7 @@ Remove the margin in all browsers.
 */
 
 body {
-  margin: 0;
+    margin: 0;
 }
 
 /**
@@ -54,16 +54,9 @@ Improve consistency of default fonts in all browsers. (https://github.com/sindre
 */
 
 body {
-  font-family:
-		system-ui,
-		-apple-system, /* Firefox supports this but not yet `system-ui` */
-		'Segoe UI',
-		Roboto,
-		Helvetica,
-		Arial,
-		sans-serif,
-		'Apple Color Emoji',
-		'Segoe UI Emoji';
+    font-family: system-ui, -apple-system,
+        /* Firefox supports this but not yet `system-ui` */ 'Segoe UI', Roboto,
+        Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
 }
 
 /*
@@ -95,14 +88,9 @@ Add the correct font weight in Edge and Safari.
 */
 
 code {
-  font-family:
-		ui-monospace,
-		SFMono-Regular,
-		Consolas,
-		'Liberation Mono',
-		Menlo,
-		monospace; /* 1 */
-  font-size: 1em; /* 2 */
+    font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono',
+        Menlo, monospace; /* 1 */
+    font-size: 1em; /* 2 */
 }
 
 /**
@@ -134,10 +122,10 @@ Forms
 */
 
 button {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 1 */
+    line-height: 1.15; /* 1 */
+    margin: 0; /* 2 */
 }
 
 /**
@@ -145,8 +133,9 @@ Remove the inheritance of text transform in Edge and Firefox.
 1. Remove the inheritance of text transform in Firefox.
 */
 
-button { /* 1 */
-  text-transform: none;
+button {
+    /* 1 */
+    text-transform: none;
 }
 
 /**
@@ -155,7 +144,7 @@ Correct the inability to style clickable types in iOS and Safari.
 
 button,
 [type='button'] {
-  -webkit-appearance: button;
+    -webkit-appearance: button;
 }
 
 /**
@@ -216,14 +205,13 @@ Add the correct display in Chrome and Safari.
  * Removes the default spacing and border for appropriate elements.
  */
 
-
 p {
-  margin: 0;
+    margin: 0;
 }
 
 button {
-  background-color: transparent;
-  background-image: none;
+    background-color: transparent;
+    background-image: none;
 }
 
 /**
@@ -232,8 +220,8 @@ button {
  */
 
 button:focus {
-  outline: 1px dotted;
-  outline: 5px auto -webkit-focus-ring-color;
+    outline: 1px dotted;
+    outline: 5px auto -webkit-focus-ring-color;
 }
 
 /**
@@ -248,8 +236,11 @@ button:focus {
  */
 
 html {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 1 */
-  line-height: 1.5; /* 2 */
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+        'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+        'Noto Color Emoji'; /* 1 */
+    line-height: 1.5; /* 2 */
 }
 
 /**
@@ -258,8 +249,8 @@ html {
  */
 
 body {
-  font-family: inherit;
-  line-height: inherit;
+    font-family: inherit;
+    line-height: inherit;
 }
 
 /**
@@ -291,10 +282,10 @@ body {
 *,
 ::before,
 ::after {
-  box-sizing: border-box; /* 1 */
-  border-width: 0; /* 2 */
-  border-style: solid; /* 2 */
-  border-color: #e5e7eb; /* 2 */
+    box-sizing: border-box; /* 1 */
+    border-width: 0; /* 2 */
+    border-style: solid; /* 2 */
+    border-color: #e5e7eb; /* 2 */
 }
 
 /*
@@ -312,7 +303,7 @@ body {
  */
 
 button {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 /**
@@ -321,8 +312,8 @@ button {
  */
 
 a {
-  color: inherit;
-  text-decoration: inherit;
+    color: inherit;
+    text-decoration: inherit;
 }
 
 /**
@@ -334,9 +325,9 @@ a {
  */
 
 button {
-  padding: 0;
-  line-height: inherit;
-  color: inherit;
+    padding: 0;
+    line-height: inherit;
+    color: inherit;
 }
 
 /**
@@ -346,9 +337,9 @@ button {
  * 'mono' font family.
  */
 
-
 code {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+        'Liberation Mono', 'Courier New', monospace;
 }
 
 /**
@@ -367,121 +358,131 @@ code {
  */
 
 .container {
-  width: 100%;
+    width: 100%;
 }
 
 @media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
+    .container {
+        max-width: 640px;
+    }
 }
 
 @media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
+    .container {
+        max-width: 768px;
+    }
 }
 
 @media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
+    .container {
+        max-width: 1024px;
+    }
 }
 
 @media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
+    .container {
+        max-width: 1280px;
+    }
 }
 
 @media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
+    .container {
+        max-width: 1536px;
+    }
 }
 
 .bg-gray-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
+    --tw-bg-opacity: 1;
+    background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
 }
 
 .bg-gray-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgba(107, 114, 128, var(--tw-bg-opacity));
+    --tw-bg-opacity: 1;
+    background-color: rgba(107, 114, 128, var(--tw-bg-opacity));
+}
+
+.bg-primary {
+    background-color: var(--primary);
 }
 
 .flex {
-  display: flex;
+    display: flex;
+}
+
+.hidden {
+    display: none;
 }
 
 .flex-1 {
-  flex: 1 1 0%;
+    flex: 1 1 0%;
 }
 
 .mx-auto {
-  margin-left: auto;
-  margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 * {
-  --tw-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
 }
 
 * {
-  --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
-  --tw-ring-offset-width: 0px;
-  --tw-ring-offset-color: #fff;
-  --tw-ring-color: rgba(59, 130, 246, 0.5);
-  --tw-ring-offset-shadow: 0 0 #0000;
-  --tw-ring-shadow: 0 0 #0000;
+    --tw-ring-inset: var(--tw-empty, /*!*/ /*!*/);
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgba(59, 130, 246, 0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
 }
 
 @keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes ping {
-  75%, 100% {
-    transform: scale(2);
-    opacity: 0;
-  }
+    75%,
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
 }
 
 @keyframes pulse {
-  50% {
-    opacity: .5;
-  }
+    50% {
+        opacity: 0.5;
+    }
 }
 
 @keyframes bounce {
-  0%, 100% {
-    transform: translateY(-25%);
-    animation-timing-function: cubic-bezier(0.8,0,1,1);
-  }
+    0%,
+    100% {
+        transform: translateY(-25%);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
 
-  50% {
-    transform: none;
-    animation-timing-function: cubic-bezier(0,0,0.2,1);
-  }
+    50% {
+        transform: none;
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
 }
 
 .theme-dark {
-  --bg-color: #d1fae5;
-  --text-color: #3b82f6;
-  --primary: #6b7280;
-  --secondary: #f3f4f6;
+    --bg-color: #d1fae5;
+    --text-color: #3b82f6;
+    --primary: #6b7280;
+    --secondary: #f3f4f6;
 }
 
 .theme-light {
-  --bg-color: #dbeafe;
-  --text-color: #ef4444;
-  --primary: #10b981;
-  --secondary: #d1fae5;
+    --bg-color: #dbeafe;
+    --text-color: #ef4444;
+    --primary: #10b981;
+    --secondary: #d1fae5;
 }

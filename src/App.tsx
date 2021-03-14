@@ -7,7 +7,8 @@ function App(): JSX.Element {
     const [bodyClass, setBodyClass] = useState('theme-dark');
 
     return (
-        <div className={`container mx-auto px-4 bg-gray-100 {bodyClass}`}>
+        <div className="container mx-auto px-4 bg-gray-100">
+            <div className="hidden theme-dark theme-light"></div>
             <Home />
             <div className="bg-primary">
                 <div>{bodyClass}</div>
