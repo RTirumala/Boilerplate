@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 type Props = {
-    title: string;
     children: React.ReactNode;
 };
 export function createCtx<StateType, ActionType>(
