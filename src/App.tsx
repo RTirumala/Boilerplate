@@ -1,6 +1,6 @@
-import { doc } from 'prettier';
 import React, { useState } from 'react';
 import './App.css';
+import { CountProvider } from './context/homeContext';
 import Home from './screens/home/HomeContainer';
 
 function App(): JSX.Element {
@@ -9,7 +9,9 @@ function App(): JSX.Element {
     return (
         <div className="container mx-auto px-4 bg-gray-100">
             <div className="hidden theme-dark theme-light"></div>
-            <Home />
+            <CountProvider>
+                <Home />
+            </CountProvider>
             <div className="bg-primary">
                 <div>{bodyClass}</div>
             </div>

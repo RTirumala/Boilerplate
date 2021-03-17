@@ -32,12 +32,12 @@
         "workbox-streams": "^5.1.4"
     },
     "scripts": {
-        "startserver": "npm run watch:css && react-scripts start",
+        "start-server": "npm run watch:css && react-scripts start",
         "build": "npm run watch:css && react-scripts build",
         "test": "craco test",
         "pretty": "prettier --write \"./**/*.{js,ts,tsx,json}\"",
         "prettier-watch": "onchange \"**/*\" -- prettier --write --ignore-unknown {{changed}}",
-        "start": "npm-run-all --parallel watch:css startserver prettier-watch",
+        "start": "npm-run-all --parallel watch:css start-server prettier-watch",
         "watch:css": "postcss ./src/index.css -o ./src/main.css"
     },
     "eslintConfig": {
