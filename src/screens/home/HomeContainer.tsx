@@ -8,18 +8,20 @@ function Home(): JSX.Element {
 
     return (
         <div>
-            <div>
+            <div className="flex space-x-2 items-center">
+                <div>
                 Count: {state.count}
-                <button onClick={() => dispatch({ type: 'increment' })}>
+                </div>
+                <button className="btn" onClick={() => dispatch({ type: 'increment' })}>
                     +
                 </button>
-                <button onClick={() => dispatch({ type: 'add', payload: 5 })}>
+                <button className="btn" onClick={() => dispatch({ type: 'add', payload: 5 })}>
                     +5
                 </button>
-                <button onClick={() => dispatch({ type: 'decrement' })}>
+                <button className="btn" onClick={() => dispatch({ type: 'decrement' })}>
                     -
                 </button>
-                <button onClick={() => dispatch({ type: 'minus', payload: 5 })}>
+                <button className="btn" onClick={() => dispatch({ type: 'minus', payload: 5 })}>
                     +5
                 </button>
             </div>

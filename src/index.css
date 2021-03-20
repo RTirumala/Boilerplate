@@ -1,6 +1,15 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+
+.btn {
+    @apply bg-gray-400 rounded py-1 px-3;
+}
+
+.btn-primary {
+    @apply bg-primary text-secondary;
+}
+
+@import 'tailwindcss/utilities';
 
 .theme-dark {
     --bg-color: theme(colors.green.100);
