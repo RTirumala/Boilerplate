@@ -34,10 +34,20 @@ function Home(): JSX.Element {
                     className="btn"
                     onClick={() => dispatch({ type: 'minus', payload: 5 })}
                 >
-                    +5
+                    -5
                 </button>
             </div>
             {/* <NbaTable /> */}
+            <div className="grid grid-cols-2 md:grid-cols-12 gap-5 px-6 py-4 whitespace-no-wrap md:text-left border-b border-gray-500 text-sm leading-5 text-gray-600">
+                <div className="col-span-1 md:block hidden font-bold">ID#</div>
+                <div className="col-span-1 md:block hidden font-bold">
+                    User ID
+                </div>
+                <div className="col-span-4 md:block hidden font-bold">
+                    Title
+                </div>
+                <div className="col-span-6 md:block hidden font-bold">Body</div>
+            </div>
             {!isFetching &&
                 data &&
                 Object.keys(data).map((temp) => (
